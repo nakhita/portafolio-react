@@ -1,0 +1,152 @@
+@font-face {
+  font-family: "Lexend";
+  src: url("/fonts/Lexend-VariableFont_wght.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Manjari";
+  src: url("/fonts/Manjari-Regular.ttf") format("truetype");
+}
+
+.contact-wrapper {
+  @apply bg-white w-full pt-20 pb-10 rounded-xl;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  font-family: "Lexend", sans-serif;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 640px) {
+  .contact-wrapper {
+    max-width: 95%;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .contact-wrapper {
+    max-width: 600px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .contact-wrapper {
+    max-width: 700px;
+  }
+}
+
+.contact-title {
+  @apply text-6xl font-bold mb-4 text-left w-full;
+}
+
+.contact-subtitle {
+  @apply text-left mb-4 w-full;
+  font-size: 0.95rem;
+}
+
+.contact-link {
+  @apply font-semibold no-underline;
+  color: #a855f7;
+}
+.contact-link:hover {
+  color: #c084fc;
+}
+
+.contact-form {
+  @apply flex flex-col gap-3 w-full text-left;
+}
+
+.contact-label {
+  @apply font-semibold text-gray-700 text-left;
+  font-size: 1rem;
+}
+
+.contact-input,
+.contact-textarea,
+.contact-select {
+  @apply border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-gray-400 text-left;
+  font-size: 0.875rem;
+}
+
+.contact-error {
+  @apply text-sm text-red-500 text-left;
+}
+
+.contact-button {
+  @apply px-4 py-2 rounded transition;
+  background-color: #a855f7;
+  color: white;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.contact-button:enabled {
+  background-color: #a855f7;
+  color: white;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.contact-button:hover:enabled {
+  background-color: #8b37df;
+}
+
+.contact-button:disabled {
+  background-color: #e9d5ff;
+  color: white;
+  opacity: 1;
+  cursor: not-allowed;
+}
+
+.contact-captcha-info {
+  @apply text-xs text-gray-500 text-left mt-2;
+}
+
+.contact-feedback {
+  @apply flex justify-between items-center text-sm px-4 py-3 rounded mt-4;
+}
+
+.contact-success {
+  background-color: #d1fae5;
+  color: #065f46;
+  @apply mb-4;
+}
+
+.contact-success-title {
+  @apply font-bold text-green-800 mb-1;
+}
+
+.contact-success-subtitle {
+  @apply text-sm text-green-800;
+}
+
+.contact-error-box {
+  background-color: #fee2e2;
+  color: #991b1b;
+  @apply mt-0 mb-5;
+}
+
+.contact-feedback button {
+  @apply font-bold text-xl ml-4;
+  cursor: pointer;
+  line-height: 1;
+  background: none;
+  border: none;
+}
+
+.contact-success-texts {
+  @apply flex flex-col;
+}
+
+@media (max-width: 768px) {
+  .contact-title {
+    font-size: 3rem;
+  }
+  .contact-wrapper {
+    @apply pt-4;
+  }
+}

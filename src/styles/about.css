@@ -1,0 +1,68 @@
+.about-card {
+  @apply bg-white p-6 md:p-10 mb-1 shadow-md min-h-screen flex flex-col;
+}
+
+.mobile-layout {
+  @apply block md:hidden w-full;
+}
+
+.carousel-container {
+  @apply flex justify-center mb-6;
+}
+
+.about-grid {
+  @apply hidden md:flex w-full flex-row items-start gap-8;
+}
+
+.desktop-stack {
+  @apply hidden md:flex justify-center mr-8;
+}
+
+.about-text-container {
+  @apply flex-1 mt-0;
+}
+
+.about-title {
+  @apply text-6xl md:text-8xl py-4 font-bold text-gray-800 mb-4 text-center;
+}
+
+.about-text {
+  @apply text-[#525050] text-xl text-center md:text-left max-w-prose mx-auto md:mx-0;
+}
+
+.inline-link {
+  @apply font-semibold no-underline text-[#a855f7] hover:text-[#c084fc];
+}
+
+.about-image {
+  @apply w-60 h-60 object-cover rounded-[10px] max-w-full mx-auto;
+}
+
+.image-transition {
+  @apply transition-all duration-700 ease-out transform;
+}
+
+.image-visible {
+  @apply opacity-100 translate-y-0;
+}
+
+.image-hidden {
+  @apply opacity-0 -translate-y-10;
+}
+
+.header-title {
+  @apply flex items-center justify-start gap-6 mb-8;
+}
+
+.header-title > h1 {
+  @apply m-0 p-0;
+}
+
+.vertical-carousel {
+  max-height: 850px;
+  @apply w-80 overflow-hidden rounded-xl shadow-lg flex items-center justify-center mt-7;
+}
+
+.vertical-carousel-image {
+  @apply w-full h-full object-cover transition-all duration-700 ease-out;
+}

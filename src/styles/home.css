@@ -1,0 +1,64 @@
+.home {
+  @apply flex flex-col pb-16 items-center justify-center min-h-screen bg-gray-100 relative;
+}
+
+.profile-container {
+  @apply relative flex flex-col items-center;
+}
+
+@media (max-width: 639px) {
+  .profile-container {
+    transform: scale(0.75);
+  }
+}
+
+.profile-image {
+  @apply w-80 h-80 object-cover rounded-full shadow-sm border-4 border-[#e9d5ff];
+  position: relative;
+  z-index: 10;
+}
+
+.image-mask {
+  @apply bg-gray-100 w-72 h-10;
+  position: absolute;
+  top: calc(70% + 60px);
+  z-index: 30;
+  border-radius: 0 0 9999px 9999px;
+}
+
+.curved-text-svg {
+  @apply absolute left-1/2 transform -translate-x-1/2;
+  top: -230px;
+  z-index: 0;
+  width: 500px;
+  height: 400px;
+  transform: translateX(-50%) scale(1.3);
+
+  @screen md {
+    width: 570px;
+    height: 550px;
+    top: -285px;
+    transform: translateX(-50%) scale(1);
+  }
+
+  @screen lg {
+    width: 700px;
+    height: 700px;
+    top: -380px;
+  }
+}
+
+.curved-shadow {
+  text-shadow: 2px 2px 5px rgba(134, 132, 132, 0.25);
+}
+
+@keyframes fadeInHomePage {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

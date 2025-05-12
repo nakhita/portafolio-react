@@ -1,0 +1,41 @@
+.projects-section {
+  @apply min-h-screen bg-gray-100 p-10;
+}
+
+.timeline-list {
+  @apply relative border-s-4 border-[#a855f7] ml-6;
+}
+
+.timeline-dot {
+  @apply absolute w-5 h-5 bg-[#e9d5ff] border border-[#a855f7] rounded-full;
+  top: 1.5rem;
+  left: -2.25rem;
+}
+
+.no-top-margin {
+  margin-top: 0 !important;
+}
+
+.timeline-box {
+  @apply bg-white shadow-md shadow-[#e9d5ff] p-5 mt-6 rounded-xl flex flex-col items-start;
+}
+
+.timeline-title {
+  @apply text-2xl font-semibold text-gray-900 mb-1 text-left w-full;
+}
+
+.timeline-description {
+  @apply text-gray-600 mb-4 text-sm text-left w-full;
+}
+
+.timeline-tags {
+  @apply flex gap-3 flex-wrap justify-end w-full mt-2;
+}
+
+.timeline-tag {
+  @apply text-xs px-2 py-1 rounded-full text-white bg-[#a855f7];
+}
+
+.timeline-year-label + .timeline-item .timeline-box {
+  margin-top: 0.5rem;
+}
